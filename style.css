@@ -7,10 +7,12 @@ body {
   padding: 0;
 }
 
+/* Headings: Centered, Calm */
 h1, h2, h3 {
   text-align: center;
   font-weight: normal;
-  margin-top: 20px;
+  margin-top: 30px;
+  color: #f1efe7;
 }
 
 /* Skip link for accessibility */
@@ -52,7 +54,7 @@ nav {
   color: #c9ffcd; /* Soft moss green */
 }
 
-/* Main Content Area */
+/* Main Content */
 main {
   padding: 40px 20px;
   max-width: 900px;
@@ -65,6 +67,7 @@ footer {
   padding: 20px;
   background-color: #4a6670;
   color: #f1efe7;
+  font-size: 0.9em;
 }
 
 /* Gallery Grid */
@@ -113,12 +116,11 @@ footer {
   opacity: 1;
 }
 
-/* Alternate border on even cards */
 .image-card:nth-child(even) {
   border-color: #4a6670;
 }
 
-/* Reflections (Flex Layout) */
+/* Reflections */
 .reflections-grid {
   display: flex;
   flex-wrap: wrap;
@@ -132,20 +134,22 @@ footer {
   background-color: rgba(76, 100, 95, 0.3); /* soft mist green overlay */
   padding: 20px;
   border-radius: 10px;
-  color: #f1efe7;
   border: 2px solid #4a6670;
+  color: #f1efe7;
 }
 
 .reflection-card h2 {
   text-align: center;
-  color: #f1efe7;
+  margin-bottom: 10px;
 }
 
-/* Intro Paragraph Styling */
+/* Centered Intro Text */
 .intro {
   text-align: center;
   line-height: 1.7;
   font-size: 1.1em;
+  max-width: 700px;
+  margin: auto;
   color: #f1efe7;
 }
 
@@ -153,4 +157,5 @@ footer {
   text-align: center;
   font-style: italic;
   margin-bottom: 40px;
+  color: #f1efe7;
 }
