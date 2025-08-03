@@ -1,27 +1,25 @@
 /* Global Base Styles */
 body {
-  background-color: #1e3d2f; /* Deep forest green */
-  color: #f1efe7;            /* Warm cream */
+  background-color: #1b1f1d;
+  color: #f5f4f0;
   font-family: 'Georgia', serif;
   margin: 0;
   padding: 0;
 }
 
-/* Headings: Centered, Calm */
 h1, h2, h3 {
   text-align: center;
   font-weight: normal;
-  margin-top: 30px;
-  color: #f1efe7;
+  margin-top: 20px;
 }
 
-/* Skip link for accessibility */
+/* Skip link */
 .skip-link {
   position: absolute;
   top: -40px;
   left: 0;
-  background: #f1efe7;
-  color: #1e3d2f;
+  background: #f5f4f0;
+  color: #1b1f1d;
   padding: 8px;
   z-index: 100;
 }
@@ -31,7 +29,7 @@ h1, h2, h3 {
 
 /* Navigation */
 nav {
-  background-color: #4a6670; /* Rain blue-gray */
+  background-color: #3a4c47;
   padding: 10px;
 }
 
@@ -45,13 +43,13 @@ nav {
 }
 
 .nav-list a {
-  color: #f1efe7;
+  color: #f5f4f0;
   text-decoration: none;
   font-weight: bold;
 }
 
 .nav-list a:hover {
-  color: #c9ffcd; /* Soft moss green */
+  color: #6e8b7b;
 }
 
 /* Main Content */
@@ -65,9 +63,16 @@ main {
 footer {
   text-align: center;
   padding: 20px;
-  background-color: #4a6670;
-  color: #f1efe7;
-  font-size: 0.9em;
+  background-color: #3a4c47;
+  color: #f5f4f0;
+}
+
+/* Intro Paragraph Styling */
+.intro {
+  text-align: center;
+  line-height: 1.7;
+  font-size: 1.1em;
+  color: #f5f4f0;
 }
 
 /* Gallery Grid */
@@ -81,10 +86,10 @@ footer {
 .image-card {
   position: relative;
   overflow: hidden;
-  border: 3px solid #5c7c6b; /* Soft moss green */
+  border: 2px solid #3a4c47;
   padding: 5px;
   border-radius: 12px;
-  background-color: #2d4c3f;
+  background-color: #2a2f2d;
 }
 
 .image-card img {
@@ -104,8 +109,8 @@ footer {
   bottom: 0;
   left: 0;
   right: 0;
-  background: rgba(30, 61, 47, 0.8); /* forest green overlay */
-  color: #f1efe7;
+  background: rgba(27, 31, 29, 0.8);
+  color: #f5f4f0;
   padding: 10px;
   font-size: 0.95em;
   opacity: 0;
@@ -117,7 +122,7 @@ footer {
 }
 
 .image-card:nth-child(even) {
-  border-color: #4a6670;
+  border-color: #6e8b7b;
 }
 
 /* Reflections */
@@ -131,31 +136,33 @@ footer {
 
 .reflection-card {
   flex: 1 1 300px;
-  background-color: rgba(76, 100, 95, 0.3); /* soft mist green overlay */
+  background-color: rgba(58, 76, 71, 0.2);
   padding: 20px;
   border-radius: 10px;
-  border: 2px solid #4a6670;
-  color: #f1efe7;
+  color: #f5f4f0;
+  border: 2px solid #3a4c47;
 }
 
 .reflection-card h2 {
   text-align: center;
-  margin-bottom: 10px;
+  color: #f5f4f0;
 }
 
-/* Centered Intro Text */
-.intro {
-  text-align: center;
-  line-height: 1.7;
-  font-size: 1.1em;
-  max-width: 700px;
-  margin: auto;
-  color: #f1efe7;
+/* Gallery Preview on Home */
+.gallery-preview {
+  margin-top: 60px;
 }
- 
+
+.gallery-preview h2 {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: #f5f4f0;
+}
+
 .gallery-intro {
   text-align: center;
   font-style: italic;
-  margin-bottom: 40px;
-  color: #f1efe7;
+  color: #f5f4f0;
+  margin-bottom: 30px;
 }
