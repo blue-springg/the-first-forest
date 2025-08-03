@@ -140,27 +140,62 @@ footer {
   border-color: #6e8b7b;
 }
 
-/* Reflections */
+/* Reflections Section */
 .reflections-grid {
   display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  padding: 40px 0;
-  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+  padding: 40px 20px;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .reflection-card {
-  flex: 1 1 300px;
-  background-color: rgba(58, 76, 71, 0.2);
-  padding: 20px;
-  border-radius: 10px;
+  background-color: rgba(58, 76, 71, 0.15);
+  padding: 25px 30px;
+  border-radius: 12px;
   color: #f5f4f0;
-  border: 2px solid #3a4c47;
+  border: 1.5px solid #6e8b7b;
+  font-size: 1.05em;
+  line-height: 1.8;
+  text-align: justify;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.reflection-card:hover {
+  transform: translateY(-3px);
 }
 
 .reflection-card h2 {
   text-align: center;
   color: #f5f4f0;
+  margin-bottom: 15px;
+  font-weight: normal;
+  font-size: 1.4em;
+}
+
+/* Playlist Links in Reflections */
+.reflection-card ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.reflection-card li {
+  margin-bottom: 10px;
+}
+
+.reflection-card a {
+  color: #cce5dd;
+  text-decoration: none;
+  font-style: italic;
+}
+
+.reflection-card a:hover {
+  text-decoration: underline;
+  color: #a6c9bb;
 }
 
 /* Gallery Preview on Home */
