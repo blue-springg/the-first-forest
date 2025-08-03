@@ -1,14 +1,84 @@
+/* Global Base Styles */
+body {
+  background-color: #1e3d2f; /* Deep forest green */
+  color: #f1efe7;            /* Warm cream */
+  font-family: 'Georgia', serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3 {
+  text-align: center;
+  font-weight: normal;
+  margin-top: 20px;
+}
+
+/* Skip link for accessibility */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: #f1efe7;
+  color: #1e3d2f;
+  padding: 8px;
+  z-index: 100;
+}
+.skip-link:focus {
+  top: 0;
+}
+
+/* Navigation */
+nav {
+  background-color: #4a6670; /* Rain blue-gray */
+  padding: 10px;
+}
+
+.nav-list {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-list a {
+  color: #f1efe7;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-list a:hover {
+  color: #c9ffcd; /* Soft moss green */
+}
+
+/* Main Content Area */
+main {
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #4a6670;
+  color: #f1efe7;
+}
+
+/* Gallery Grid */
 .image-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
-  padding: 40px;
+  padding: 40px 0;
 }
 
 .image-card {
   position: relative;
   overflow: hidden;
-  border: 3px solid #5c7c6b;
+  border: 3px solid #5c7c6b; /* Soft moss green */
   padding: 5px;
   border-radius: 12px;
   background-color: #2d4c3f;
@@ -31,7 +101,7 @@
   bottom: 0;
   left: 0;
   right: 0;
-  background: rgba(30, 61, 47, 0.8);
+  background: rgba(30, 61, 47, 0.8); /* forest green overlay */
   color: #f1efe7;
   padding: 10px;
   font-size: 0.95em;
@@ -43,7 +113,44 @@
   opacity: 1;
 }
 
-/* nth-child example: alternate border color */
+/* Alternate border on even cards */
 .image-card:nth-child(even) {
   border-color: #4a6670;
+}
+
+/* Reflections (Flex Layout) */
+.reflections-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 40px 0;
+  justify-content: center;
+}
+
+.reflection-card {
+  flex: 1 1 300px;
+  background-color: rgba(76, 100, 95, 0.3); /* soft mist green overlay */
+  padding: 20px;
+  border-radius: 10px;
+  color: #f1efe7;
+  border: 2px solid #4a6670;
+}
+
+.reflection-card h2 {
+  text-align: center;
+  color: #f1efe7;
+}
+
+/* Intro Paragraph Styling */
+.intro {
+  text-align: center;
+  line-height: 1.7;
+  font-size: 1.1em;
+  color: #f1efe7;
+}
+
+.gallery-intro {
+  text-align: center;
+  font-style: italic;
+  margin-bottom: 40px;
 }
