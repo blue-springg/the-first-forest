@@ -82,12 +82,20 @@ footer {
   color: #f5f4f0;
 }
 
-/* Intro Paragraph Styling */
+/* Intro Paragraph Styling (Homepage) */
 .intro {
-  text-align: center;
-  line-height: 1.7;
-  font-size: 1.1em;
   color: #f5f4f0;
+  font-size: 1.1em;
+  line-height: 1.7;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.intro p {
+  text-align: justify;
+  margin-bottom: 20px;
+  text-indent: 1.5em;
 }
 
 /* Gallery Grid */
