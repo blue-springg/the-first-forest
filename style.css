@@ -92,11 +92,12 @@ footer {
   padding: 20px;
 }
 
-.intro p {
-  text-align: justify;
-  margin-bottom: 20px;
-  text-indent: 1.5em;
+.intro-tagline {
+  text-align: center;
+  font-style: italic;  /* Optional: matches your style */
+  margin-bottom: 20px; /* Consistent spacing */
 }
+
 
 /* Gallery Grid */
 .image-grid {
