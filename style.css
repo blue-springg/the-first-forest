@@ -302,13 +302,14 @@ footer {
     width: 100%;
   }
 }
+
 .reflection-card {
   opacity: 0;
-  transform: translateX(0);
   transition: all 1s ease;
   will-change: transform, opacity;
 }
 
+/* Slide directions */
 .slide-left {
   transform: translateX(-100px);
 }
@@ -317,12 +318,8 @@ footer {
   transform: translateX(100px);
 }
 
+/* When visible */
 .reflection-card.show {
   opacity: 1;
   transform: translateX(0);
 }
-
-
-
-
-
