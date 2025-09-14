@@ -23,36 +23,49 @@
     <h1>What This Drama Taught Me</h1>
 
     <section class="reflections-grid">
-      <div class="reflection-card">
+      <div class="reflection-card slide-left">
         <h2>“Healing isn’t loud.”</h2>
         <p>This drama showed me that quiet people carry the loudest stories. Wen Yifan reminded me that pain doesn’t always speak, but it still needs to be held gently.</p>
       </div>
 
-<div class="reflection-card">
-  <h2>Wen Yifan’s Stillness</h2>
-  <p>
-    She never demanded love — but her presence invited it. Watching her was like standing under a tree during rain, feeling everything and nothing all at once.  
-    The way she was loved — softly, fully, and without needing to ask — made me ache.  
-    I want to be loved like she was loved. :)))
-  </p>
-</div>
+      <div class="reflection-card slide-right">
+        <h2>Wen Yifan’s Stillness</h2>
+        <p>
+          She never demanded love — but her presence invited it. Watching her was like standing under a tree during rain, feeling everything and nothing all at once.  
+          The way she was loved — softly, fully, and without needing to ask — made me ache.  
+          I want to be loved like she was loved. :)))
+        </p>
+      </div>
 
-
-<div class="reflection-card">
-  <h2>Playlist Vibes</h2>
-  <ul>
-    <li><a href="https://youtu.be/sT-wpjhYy-0?si=2OgLBqcAyjAGaZj0" target="_blank">“Like a sunny day like a rainy day”</a></li>
-    <li><a href="https://youtu.be/33whcKHs7ZI?si=yLWueNOAMYCae5Js" target="_blank">“want to quietly live in your soul”</a></li>
-    <li><a href="https://youtu.be/_h-dE02tZkM?si=bPrw7R3oPBIKEuKU" target="_blank">“No reason”</a></li>
-  </ul>
-</div>
-
+      <div class="reflection-card slide-left">
+        <h2>Playlist Vibes</h2>
+        <ul>
+          <li><a href="https://youtu.be/sT-wpjhYy-0?si=2OgLBqcAyjAGaZj0" target="_blank">“Like a sunny day like a rainy day”</a></li>
+          <li><a href="https://youtu.be/33whcKHs7ZI?si=yLWueNOAMYCae5Js" target="_blank">“want to quietly live in your soul”</a></li>
+          <li><a href="https://youtu.be/_h-dE02tZkM?si=bPrw7R3oPBIKEuKU" target="_blank">“No reason”</a></li>
+        </ul>
+      </div>
     </section>
   </main>
 
   <footer>
     <p>Made by Blue Spring</p>
   </footer>
+
+  <script>
+    const cards = document.querySelectorAll('.reflection-card');
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+        }
+      });
+    }, {
+      threshold: 0.1
+    });
+
+    cards.forEach(card => observer.observe(card));
+  </script>
 </body>
 </html>
- 
