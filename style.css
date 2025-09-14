@@ -225,3 +225,54 @@ footer {
   color: #f5f4f0;
   margin-bottom: 30px;
 }
+.intro-flex {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.image-slide {
+  flex: 1 1 300px;
+  animation: slideDown 1s ease-out forwards;
+  opacity: 0;
+}
+
+.image-slide img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+  border: 2px solid #6e8b7b;
+}
+
+.text-slide {
+  flex: 2 1 500px;
+  animation: slideRight 1.2s ease-out forwards;
+  animation-delay: 0.2s;
+  opacity: 0;
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideRight {
+  from {
+    transform: translateX(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
