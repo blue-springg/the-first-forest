@@ -238,7 +238,7 @@ footer {
 }
 
 .intro-image {
-  flex: 0 0 300px; /* Fixed width for image on left */
+  flex: 0 0 360px; 
   animation: slideFromTop 1s ease forwards;
 }
 
